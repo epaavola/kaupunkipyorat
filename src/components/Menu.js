@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { withRouter } from 'react-router-dom'
-import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Paper, Card, Select, MenuItem, TextField } from '@material-ui/core'
-import SearchIcon from '@material-ui/icons/Search';
-import InputBase from '@material-ui/core/InputBase';
-import IconButton from '@material-ui/core/IconButton';
+import { Typography, Paper, Card, TextField } from '@material-ui/core'
+import SearchIcon from '@material-ui/icons/Search'
+import InputBase from '@material-ui/core/InputBase'
+import IconButton from '@material-ui/core/IconButton'
 import WeatherService from './WeatherService'
-import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue, } from 'recoil';
+import { useRecoilState, } from 'recoil'
 import { searchTextState, originState, destinationState } from './Atoms'
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import Autocomplete from '@material-ui/lab/Autocomplete'
 
 const useStyles = makeStyles((theme) => ({
     menu: {

@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { withRouter } from 'react-router-dom'
-import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
 import Map from './Map'
 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
         height: "100%",
@@ -21,9 +19,7 @@ const HomeContent = ( {bikeData} ) => {
 
     return (
         <div className={classes.root}>
-
             <Map markersData={bikeData.bikeRentalStations}/>
-
         </div>
     )
 }
