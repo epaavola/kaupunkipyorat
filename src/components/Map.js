@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
-import BikeStations from './BikeStations'
+import React, { useEffect, useRef } from 'react'
 import L, { map } from 'leaflet'
-import { useRecoilValue, useRecoilState } from 'recoil';
+import { useRecoilValue, useRecoilState } from 'recoil'
 import { destinationState, originState, searchTextState, routeState } from './Atoms'
-import { useLazyQuery, gql } from '@apollo/client';
-import { Button } from '@material-ui/core';
+import { useLazyQuery, gql } from '@apollo/client'
 import polyUtil from 'polyline-encoded'
 
 const style = {
@@ -64,13 +62,11 @@ const Map = ({ markersData }) => {
       })
     }
 
-    // Lisätään reittiobjekti muuttujaan
     useEffect(() => {
       if (origin !== null && destination !== null)
         showRoute(origin.lat, origin.lon, destination.lat, destination.lon)
     }, [origin, destination])
 
-    // Lisätään reittiobjekti muuttujaan
     useEffect(() => {
       if (result.data)
         setRoute(result.data)

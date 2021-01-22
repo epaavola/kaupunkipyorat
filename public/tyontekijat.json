@@ -1,8 +1,0 @@
-{"tyontekijat":
-[
- {"firstName":"Mauno", "lastName":"Ahonen", "address":"Maunontie 2", "phone":"050228442", "phone2":"050255442"},
- {"firstName":"Matti", "lastName":"Näsä", "address":"Kuntosali 15", "phone":"020228442", "phone2":"050211142"},
- {"firstName":"Raimo", "lastName":"Vormisto", "address":"Valmentajankatu 3", "phone":"044228442", "phone2":"050778442"},
- {"firstName":"Timo", "lastName":"Silakka", "address":"Sporttivartti 10", "phone":"040228442", "phone2":"050299842"}
-]
-}

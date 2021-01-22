@@ -1,14 +1,7 @@
-import React from 'react';
-import './App.css';
-import Home from './pages/Frontpage'
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from 'recoil';
+import React from 'react'
+import Home from './containers/Frontpage'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { RecoilRoot, } from 'recoil'
 
 
 function App() {
